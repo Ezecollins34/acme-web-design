@@ -8,6 +8,7 @@ body{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
+	min-height: 100%;
 }
 
 header ul{
@@ -30,6 +31,12 @@ header ul{
 	color: white;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+html ,body{
+	height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* header **/
@@ -120,6 +127,7 @@ font-weight: bold;
  /* boxes */
  #boxes{
  	margin-top: 20px;
+ 	width: 100%; 
  }
 
  #boxes .box{
@@ -139,10 +147,11 @@ aside#sidebar{
 	float: right;
 	width: 30%;
 	margin-top: 10px;
+	min-height: 100%;
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
-	width: 90px;
+	width: 94%;
 	padding:5px;
 }
 
@@ -150,13 +159,18 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 article#main-col{
 	float: left;
 	width: 65%;
+	min-height: 100%;
 }
+section#main{
+	min-height: 100%;
+}
+
 
 /* services */
 ul#services li{
 	list-style: none;
 	padding: 20px;
-	border: #cccccc;
+	border: #cccccc solid 1px;
     margin-bottom: 5px;
     background: #e6e6e6;
 }
@@ -181,6 +195,7 @@ ul#services li{
  		float: none;
  		text-align: center;
  		width: 100%;
+ 		min-height: 100%
  	}
 
  	header"{
